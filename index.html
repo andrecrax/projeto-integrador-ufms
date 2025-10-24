@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coleta Eletrônica</title>
+
+   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-green-700 text-white p-5 flex justify-between items-center shadow">
+    <h1 class="text-2xl font-bold">Coleta Eletrônica</h1>
+    <nav id="menu">
+      <button onclick="mostrarPagina('inicio')" class="link">Início</button>
+      <button onclick="mostrarPagina('pontos')" class="link">Pontos de Coleta</button>
+      <button onclick="mostrarPagina('agendar')" class="link">Agendar Coleta</button>
+      <button onclick="mostrarPagina('login')" class="link">Login</button>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="p-10 text-center transition-opacity duration-300"></main>
+
+  <footer class="bg-green-700 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Coleta Eletrônica | Desenvolvido por estudantes da UFMS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

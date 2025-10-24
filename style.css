@@ -1,0 +1,131 @@
+#conteudo {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+/* ---------------- MENU SUPERIOR ---------------- */
+#menu {
+  display: flex;
+  gap: 2rem; /* espaço entre os botões */
+}
+
+#menu .link {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#menu .link:hover {
+  text-decoration: underline;
+  color: #bbf7d0;
+}
+
+/* Em telas grandes, centraliza e limita a largura do conteúdo */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------------- BOTÕES ---------------- */
+.btn-principal {
+  background-color: #16a34a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+  background-color: #15803d;
+}
+
+.btn-secundario {
+  border: 1px solid #16a34a;
+  color: #15803d;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-secundario:hover {
+  background-color: #f0fdf4;
+}
+
+/* ---------------- FORMULÁRIOS ---------------- */
+.formulario {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  text-align: left;
+  max-width: 500px; /* limite de largura em telas grandes */
+  width: 100%; /* ocupa toda a largura em telas pequenas */
+}
+
+.formulario label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.formulario input,
+.formulario select {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(34,197,94,0.3);
+  outline: none;
+}
+
+/* ---------------- CARTÕES DE PONTOS ---------------- */
+.card-ponto {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.25rem;
+}
+
+.card-ponto h3 {
+  color: #15803d;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+@media (max-width: 1024px) {
+  #menu {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #menu {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #menu .link {
+    background-color: rgba(255,255,255,0.1);
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+}
